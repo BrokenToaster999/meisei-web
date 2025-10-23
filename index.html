@@ -14,29 +14,50 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <header>
-    <h1>☕ Meisei Club</h1>
-    <p class="subtitle">A creative circle for small VTubers & PNGTubers</p>
-  </header>
 
-  <main>
-    <section class="intro">
-      <h2>Welcome!</h2>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <h1 class="logo">☕ Meisei Club</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Welcome Section -->
+  <section class="hero">
+    <div class="video-bg">
+      <!-- You can replace this with <video> for multiple clips or a gif -->
+      <video autoplay muted loop playsinline>
+        <source src="clips.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-content">
+      <h2>Welcome to Meisei Club</h2>
+      <p>A cozy creative space for starting VTubers and PNGTubers.</p>
+      <a href="#about" class="button">Learn More</a>
+    </div>
+    <div class="fade"></div>
+  </section>
+
+  <!-- Main Page Content -->
+  <main class="page">
+    <section id="about" class="intro">
+      <h2>About Meisei</h2>
       <p>
-        Meisei Club (<b>名声</b> = "reputation") is a friendly community for starting VTubers and PNGTubers
-        who want to grow, learn, and connect with other creators.
-      </p>
-      <p>
-        We're not an agency — we're a group of equals helping each other find confidence, direction, and
-        collaboration opportunities in the world of streaming.
+        Meisei Club (<b>名声</b> = "fame") is a supportive community for small VTubers, PNGTubers, and aspiring creators.
+        We're not an agency — we're peers helping each other learn, grow, and find confidence.
       </p>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
       <h2>What We Offer</h2>
       <ul>
         <li>💬 Constructive feedback and advice on your streams</li>
@@ -46,11 +67,10 @@
       </ul>
     </section>
 
-    <section class="cta">
+    <section id="join" class="cta">
       <h2>Join the Club</h2>
       <p>
-        Whether you’re debuting soon or already streaming, Meisei welcomes you to find your peers,
-        share your progress, and feel part of something real.
+        Whether you’re debuting soon or already streaming, Meisei welcomes you to find your peers, share your progress, and feel part of something real.
       </p>
       <a href="YOUR_DISCORD_INVITE_LINK" class="button">Join Our Discord ☕</a>
     </section>
@@ -60,7 +80,6 @@
     <p>Made with ❤️ by Broken Toaster • © 2025 Meisei Club</p>
   </footer>
 
-  <!-- Optional JS -->
   <script src="script.js"></script>
 </body>
 </html>
